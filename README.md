@@ -1,5 +1,5 @@
 # Projeto Alura Plus:
-Um projeto fruto de prática de HTML e CSS com o auxilio dos cursos da plataforma Alura
+Um projeto fruto de prática de HTML e CSS com o auxilio dos cursos da plataforma Alura. Trata-se de uma página demonstrativa de uma espécie de anúncio sobre o combo Alura + Alura Língua, com várias áreas referente a preços e funcionalidades com intenção de chamar a atenção do internauta que entrar na página
 ![image](https://github.com/user-attachments/assets/0ad758e8-9c19-4307-825a-eddeab66ed63)
 ## Tecnologias usadas:
 * HTML
