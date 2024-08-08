@@ -7,5 +7,6 @@ Um projeto fruto de prática de HTML e CSS com o auxilio dos cursos da plataform
 * Grid
 * Flexbox
 ## Feito por:
-Danilo Ribeiro <br>
-Linkedin: https://www.linkedin.com/in/danilo-ribeiro-142962274/
+### Danilo Ribeiro 
+### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-142962274/
+
