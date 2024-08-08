@@ -1,2 +1,5 @@
-# aluraplus_aula
-Um repositorio usado para hospedar o projeto por mim feito em conjunto com o curso "HTML e CSS: Praticando HTML/CSS" da plataforma Alura
+# Projeto Alura Plus:
+Um projeto fruto de prática de HTML e CSS com o auxilio dos cursos da plataforma Alura
+![image](https://github.com/user-attachments/assets/0ad758e8-9c19-4307-825a-eddeab66ed63)
+## Tecnologias usadas:
+HTML
