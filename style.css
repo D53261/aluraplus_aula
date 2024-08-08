@@ -1,0 +1,259 @@
+/* Importa as fontes que serão utilizadas no código */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Seleciona e configura todos os elementos da pagina */
+* {
+    /* Torna a margem padrão da pagina nula */
+    margin: 0;
+    /* Torna o espaçamento padrão da pagina nulo */
+    padding: 0;
+}
+
+/* Cria variáveis globais que servem para o código inteiro, alem de simplificarem linhas de código */
+:root {
+    /* As seguintes linhas de código criam váriaveis de cor que serão usadas em determinadas partes do código sendo chamadas apenas pelo nome */
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --botao-azul-efeito: #3c92fa;
+
+    /* Cria uma variável relacionada a uma fonte que será usada em todo o código */
+    --fonte-principal: "Inter", sans-serif;
+}
+
+/* Edita todos os elementos dentro do vísivel da página */
+body {
+    /* Edita a cor de fundo da página chamando uma váriavel */
+    background-color: var(--cor-de-fundo);
+    /* Edita a cor dos textos presentes nela chamando uma variável */
+    color: var(--branco-principal);
+    /* Escolhe a fonte que será usada em toda a página */
+    font-family: var(--fonte-principal);
+    /* Altera o tamanho da fonte */
+    font-size: 16px;
+    /* Altera o peso da fonte */
+    font-weight: 400;
+}
+
+/* Edita a sessão com o nome de classe "container" e seus itens filhos */
+.container {
+    /* Define a altura da sessão englobando toda a tela */
+    height: 100vh;
+    /* Torna a disposição dos elementos moldavel */
+    display: grid;
+    /* Faz os elementos se disponibilizarem em colunas e edita para que os dois elementos ocupem metade da section cada um */
+    grid-template-columns: 50% 50%;
+}
+
+/* Edita a classe secundaria da ja editada "container" para criar uma configuração extra, levando em conta que o código do container será reutilizado */
+.principal {
+     /* Define a imagem determinada como plano de fundo da sessão */
+     background-image: url("./assets/Background.png");
+    /* Faz com que a tela de fundo não fique se repetindo */
+    background-repeat: no-repeat;
+    /* Faz com que a imagem de fundo englobe apenas o tamanho da sessão */
+    background-size: contain;
+    /* Alinha os elementos filhos verticalmente no centro */
+    align-items: center;
+    /* Alinha todo o texto no centro */
+    text-align: center;
+}
+
+/* Edita a div que engloba todos os elementos */
+.container__caixa {
+    /* Edita o espaçamento entre o elemento e a borda com uma medida relativa, alem disso coloca 0 de espaço para cima e baixo e 6 unidade em para esquerda e direita */
+    padding: 0 6em;
+}
+
+/* Edita o h1 que possui o nome da classe */
+.container__titulo {
+    /* Altera o peso da fonte */
+    font-weight: 700;
+    /* Altera o tamanho da fonte */
+    font-size: 28px;
+}
+
+/* Edita a imagem dentro do container */
+.container__imagem {
+    /* Edita a margem da imagem, levando em conta que a ordem de edição é: primeiro cima, segundo direita, terceiro baixo e quarto esquerda */
+    margin: 1em 0 2em 0;
+}
+
+/* Edita o elemento filho do container principal, por isso a nomenclatura com "__" */
+.container__botao {
+    /* Edita a cor de fundo da página chamando uma váriavel */
+    background-color: var(--botao-azul);
+    /* Edita a cor dos textos presentes nela chamando uma variável */
+    color: var(--branco-principal);
+    /* Edita a curva da borda e a torna arredondada */
+    border-radius: 5px;
+    /* Edita o espaçamento entre o elemento e a borda usando uma medida relativa ao tamanho da fonte(1em = 16px) */
+    padding: 1em;
+    /* Torna o elemento fixo em seu bloco */
+    display: block;
+    /* Elimina as decorações padrão de um elemento âncora */
+    text-decoration: none;
+    /* Adiciona uma margem de 1 unidade em abaixo do elemento */
+    margin-bottom: 1em;
+    /* Define uma transformação de um segundo para algum efeito que possa ser aplicado para este elemento */
+    transition: background-color 1s, padding 1s;
+}
+
+/* Edita a classe secundária do outro botão */
+.botao_secundario {
+    /* Torna a cor de fundo do botão transparente */
+    background-color: transparent;
+    /* Cria uma borda, sendo o primeiro espaço sua espessura, o segundo seu tipo e o terceiro sua cor chamando uma variável */
+    border: 2px solid var(--branco-principal);
+}
+
+/* Edita o paragrafo que possui tal classe */
+.container__aviso {
+    /* Altera o tamanho da fonte */
+    font-size: 12px;
+    /* Altera a cor do texto */
+    color: var(--cinza-secundario);
+}
+
+/* Edita a imagem secundaria da sessão */
+.secundaria__imagem {
+    /* Define o tamanho da imagem como 80% do seu elemento pai */
+    width: 80%;
+}
+
+/* Edita a classe secundaria que compartiha do container, um codigo que esta sendo reutilizado */
+.secundaria {
+    /* Alinha verticalmente todos os elementos no centro */
+    align-items: center;
+    /* Define a margem como 10 em apenas nos lados */
+    margin: 0 10em;
+}
+
+/* Edita o titulo da sessão secundaria */
+.descricao__titulo {
+    /* Define o peso da fonte */
+    font-weight: 700;
+    /* Define o tamanho da fonte */
+    font-size: 48px;
+    /* Define a cor da letra chamando uma varável */
+    color: var(--branco-principal);
+    /* Cria uma margem inferior de 0.1em */
+    margin-bottom: 0.1em;
+}
+
+/* Edita o paragrafo da sessão */
+.descricao__texto {
+    /* Define a cor do texto chamando uma variável */
+    color: var(--cinza-secundario);
+}
+
+/* Editando mais uma classe secundaria, dessa vez de um botao identido ao container__botao, mas com suas particularidades, por isso desta classe */
+.secundaria__botao {
+    /* Torna não só o elemento uma linha, o deixando enxuto apenas em seu canto ja que não há nenhum outro item do lado, como tambem faz uma quebra de linha pelo block */
+    display: inline-block;
+    /* Cria uma margem no topo de 1em */
+    margin-top: 1em;
+}
+
+/* Edita a divisória da sessão */
+.container__descricao {
+    /* Define o espaçamento */
+    padding: 2em;
+}
+
+/* Edita a sessão */
+.dispositivos {
+    /* Alinha todos os elementos inline filhos */
+    text-align: center;
+}
+
+/* Edita a classe que esta englobando um titulo */
+.dispositivos__titulo {
+    /* Edita o tamanho da letra */
+    font-size: 2.5em;
+    /* Edita a cor da letra chamando uma variável */
+    color: var(--branco-principal);
+}
+
+/* Edita o elemento pai de listas */
+.dispositivos__lista {
+    /* Torna os elementos filhos e sua disposição flexível */
+    display: flex;
+    /* Alinha todos os elementos filhos horizontalmente */
+    justify-content: center;
+    /* Tira todos os efeitos de lista */
+    list-style-type: none;
+    /* Edita a margem de cima e de baixo com uma unidade especial */
+    margin: 5em 0;
+}
+
+/* Edita a classe que esta englobando um titulo */
+.lista__item {
+    /* Edita o tamanho da letra */
+    font-size: 32px;
+    /* Edita a cor da letra chamando uma variável */
+    color: var(--branco-principal);
+}
+
+/* Edita o rodape da pagina */
+.rodape {
+    /* Alinha todos os elementos inline do elemento */
+    text-align: center;
+    /* Edita as margens do elemento separadamente */
+    margin: 7em 3em 3em 3em;
+}
+
+/* Edita a lista de links */
+.rodape__lista {
+    /* Torna o posicionamento dos itens flexivel */
+    display: flex;
+    /* Centraliza os elementos filhos horizontalmente */
+    justify-content: center;
+    /* Retira todos os efeitos de lista dos elementos filhos */
+    list-style-type: none;
+    /* Edita amargem do elemento */
+    margin: 1em;
+}
+
+/* Edita os links ancora */
+.lista__link a {
+    /* Retira toda decoração de texto que existe por padrao nos elementos ancora */
+    text-decoration: none;
+    /* Edita a cor da fonte */
+    color: var(--branco-principal);
+    /* Edita a margem esquerda do elemento */
+    margin-left: 1em;
+}
+
+/* Edita o paragrafo do footer */
+.rodape__texto {
+    /* Edita a margem do elemento separadamente */
+    margin: 1em 0;
+    /* Edita o tamanho da fonte */
+    font-size: 14px;
+    /* Edita a cor da fonte chamando uma variavel */
+    color: var(--cinza-secundario);
+}
+
+/* Edita o que acontece quando passa o mouse por cima do link */
+.lista__link a:hover {
+    /* Muda a cor quando o mouse sobrepõe o item */
+    color: var(--botao-azul);
+}
+
+/* Edita o que acontece quando o link é clicado */
+.lista__link a:active {
+    /* Muda a cor do item quando clicado */
+    color: purple;
+}
+
+/* Edita o que acontece com o botão quando o mouse o sobrepõe */
+.container__botao:hover {
+    /* Muda a cor de fundo do item com o mouse sobreposto */
+    background-color: var(--botao-azul-efeito);
+    /* Muda a cor do item com o mouse sobreposto */
+    color: var(--cor-de-fundo);
+    /* Muda o tamanho do item com o mouse sobreposto */
+    padding: 30px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- Define o documento como um html -->
+<html lang="pt-br"> <!-- Não só abre a tag do html geral como define qual a lingua padrão do arquivo -->
+<head> <!-- Abre a tag head, que não fica visivel ao usuario e fornece ao navegador informações sobre a pagina -->
+    <meta charset="UTF-8"> <!-- Um metadado adicionado que contem a maioria dos caracteres usados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Define a questão da visualização do usuário, alem de identificar qual o tamanho de tela que ele está usando -->
+    <title>Alura Plus</title> <!-- Define o titulo da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Serve para conectar a página atual com a folha de estilo informada no href, no caso o ponto servirá como um atalho para a pasta onde se encontra a folha de estilos -->
+</head> <!-- Fecha a tag head -->
+<body> <!-- Abre a tag do corpo da pagina, tudo que é visivel fica dentro desta tag -->
+    <section class="container principal"> <!-- Cria uma sessão, que pode ser editada separadamente dos outros elementos -->
+        <div class="container__caixa"> <!-- Cria uma divisória que engloba todos os itens dentro -->
+            <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1> <!-- Cria um texto grande na página -->
+            <img src="./assets/Combo.png" alt="O combo+ é a junção do alura+ e o alura língua" class="container__imagem"> <!-- Cria uma imagem que é chamada de acordo com a pasta onde esta está -->
+            <a href="www.alura.com.br" class="container__botao">Assine por 12x de R$ 120,00*</a> <!-- Cria uma âncora que sera editada como um botão -->
+            <a href="www.alura.com.br" class="container__botao botao_secundario">Assinar somente o Alura+</a> <!-- Cria uma âncora que sera editada como um botão, porem com uma classe extra "botao_secundario" que dará a ele alem das caracteristicas de "container__botao", outras especificas -->
+            <p class="container__aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p> <!-- Cria um paragrafo -->
+        </div> <!-- Fecha a divisória -->
+    </section> <!-- Fecha a sessão -->
+    <section class="container secundaria"> <!-- Abre uma nova sessão -->
+        <img src="./assets/Plataformas.png" alt="Um monitor e um celular com a alura plus aberta" class="secundaria__imagem"> <!-- Cria uma nova imagem -->
+        <div class="secundaria__descricao"> <!-- Cria uma divisória que engloba todos os itens dentro -->
+            <h2 class="descricao__titulo">Assista do seu jeito</h2> <!-- Cria um h2 para servir de titulo -->
+            <p class="descricao__texto">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de cursos não para de crescer.</p> <!-- Cria um paragrafo -->
+        </div> <!-- Fecha a divisória -->
+    </section> <!-- Fecha a sessão -->
+    <section class="container secundaria"> <!-- Abre uma nova sessão -->
+        <div class="container__descricao"> <!-- Cria uma divisória que engloba todos os itens dentro -->
+            <p class="descricao__texto">Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da tecnologia e aprender inglês ou espanhol, onde e como quiser.</p> <!-- Cria um paragrafo -->
+            <a href="www.alura.com.br" class="container__botao secundaria__botao">Assine o Combo+</a> <!-- Cria uma âncora que sera editada como um botão porem com uma classe secundaria -->
+        </div> <!-- Fecha a divisória -->
+        <img src="./assets/Telas.png" alt="Tela do alura+ e alura língua" class="secundaria__imagem"> <!-- Cria uma outra imagem reutilizando a classe da imagem acima -->
+    </section> <!-- Fecha a sessão -->
+    <section class="container secundaria"> <!-- Abre uma nova sessão -->
+        <img src="./assets/Notebook.png" alt="Um notebook com uma pagina da alura aberta" class="secundaria__imagem"> <!-- Cria uma outra imagem reutilizando a classe da imagem acima -->
+        <div class="secundaria__descricao"> <!-- Cria uma divisória que engloba todos os itens dentro -->
+            <h2 class="descricao__titulo">Baixe seus cursos</h2> <!-- Cria um h2 para servir de titulo -->
+            <p class="descricao__texto">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p> <!-- Cria um paragrafo -->
+        </div> <!-- Fecha a divisória -->
+    </section> <!-- Fecha a sessão -->
+    <section class="dispositivos"> <!-- Abre uma nova sessão -->
+        <h2 class="dispositivos__titulo">Disponível nos seus dispositivos favoritos</h2> <!-- Cria um h2 para servir de titulo -->
+        <ul class="dispositivos__lista"> <!-- Cria um elemento pai para uma lista hospedar -->
+            <li> <!-- Cria um elemento filho de lista pontilhada -->
+                <img src="./assets/tv.png" alt="icone de televsão"> <!-- Cria uma imagem -->
+                <h3 class="lista__item">TV</h3> <!-- Cria um h3 para servir de titulo -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+            <li> <!-- Cria um elemento filho de lista pontilhada -->
+                <img src="./assets/computador.png" alt="icone de computador"> <!-- Cria uma imagem -->
+                <h3 class="lista__item">Computador</h3> <!-- Cria um h3 para servir de titulo -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+            <li> <!-- Cria um elemento filho de lista pontilhada -->
+                <img src="./assets/celular.png" alt="icone de celular"> <!-- Cria uma imagem -->
+                <h3 class="lista__item">Celular</h3> <!-- Cria um h3 para servir de titulo -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+        </ul> <!-- Fecha o elemento pai de lista -->
+    </section> <!-- Fecha a sessão -->
+    <footer class="rodape"> <!-- Abre uma sessão destinada para o rodapé da pagina -->
+        <img src="./assets/Logo.png" alt="Alura+" class="rodape__imagem"> <!-- Cria uma imagem -->
+        <ul class="rodape__lista"> <!-- Cria um elemento pai para uma lista hospedar -->
+            <li class="lista__link"> <!-- Cria um elemento filho de lista pontilhada -->
+                <a href="#">Idioma</a> <!-- Cria uma âncora que sera editada como um botão porem com uma classe secundaria -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+            <li class="lista__link"> <!-- Cria um elemento filho de lista pontilhada -->
+                <a href="#">Dispositivos compatíveis</a> <!-- Cria uma âncora que sera editada como um botão porem com uma classe secundaria -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+            <li class="lista__link"> <!-- Cria um elemento filho de lista pontilhada -->
+                <a href="#">Contrato de assinatura</a> <!-- Cria uma âncora que sera editada como um botão porem com uma classe secundaria -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+            <li class="lista__link"> <!-- Cria um elemento filho de lista pontilhada -->
+                <a href="#">Politica de privacidade</a> <!-- Cria uma âncora que sera editada como um botão porem com uma classe secundaria -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+            <li class="lista__link"> <!-- Cria um elemento filho de lista pontilhada -->
+                <a href="#">Proteção de dados no Brasil</a> <!-- Cria uma âncora que sera editada como um botão porem com uma classe secundaria -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+            <li class="lista__link"> <!-- Cria um elemento filho de lista pontilhada -->
+                <a href="#">Anuncios personalizados</a> <!-- Cria uma âncora que sera editada como um botão porem com uma classe secundaria -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+            <li class="lista__link"> <!-- Cria um elemento filho de lista pontilhada -->
+                <a href="#">Ajuda</a> <!-- Cria uma âncora que sera editada como um botão porem com uma classe secundaria -->
+            </li> <!-- Fecha o elemento filho de lista pontlhada -->
+        </ul> <!-- Fecha o elemento pai de lista -->
+        <p class="rodape__texto">® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p> <!-- Cria um paragrafo -->
+        <p class="rodape__texto">Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p> <!-- Cria um paragrafo -->
+    </footer> <!-- Fecha a sessão footer -->
+</body> <!-- Fecha a tag body -->
+</html> <!-- Fecha a tag principal -->
