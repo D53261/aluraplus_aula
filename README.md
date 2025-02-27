@@ -9,7 +9,7 @@ Um projeto fruto de prática de HTML e CSS com o auxilio dos cursos da plataform
 * Flexbox
 ## Feito por:
 ### Danilo Ribeiro 
-### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-142962274/
+### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-catroli-da-silva/
 ### Email: danilo051007@gmail.com
 ## Visualisação:
 ### Github Pages: https://d53261.github.io/aluraplus_aula/
